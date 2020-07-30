@@ -1,11 +1,14 @@
 /* din pro bold */
-
 @font-face {
-    font-family: 'DINPro-Bold';
+    font-family: 'FF DIN';
+    src: local('FF DIN Pro Bold'), local('FF-DIN-Pro-Bold'),
+        url('../fonts/DINPro-Bold.woff2') format('woff2'),
+        url('../fonts/DINPro-Bold.woff') format('woff'),
+        url('../fonts/DINPro-Bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
-    font-weight: normal;
-    src: local('DINPro-Bold'), url('../fonts/DINPro-Bold_13934.woff') format('woff');
-}
+  }
+
 /* DIN PRO MEDIUM */
 @font-face {
     font-family: 'DIN Pro';
@@ -21,7 +24,7 @@
     font-family: 'FF DIN';
     src: local('FF DIN Pro Regular'), local('FF-DIN-Pro-Regular'),
         url('../fonts/DINPro.woff2') format('woff2'),
-        url('DINPro.woff') format('woff'),
+        url('../DINPro.woff') format('woff'),
         url('DINPro.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;

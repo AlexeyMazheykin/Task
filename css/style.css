@@ -114,16 +114,7 @@ body {
   color: rgba(40, 40, 40, 0.6);
   margin: 0 auto;
 }
+/* 620px 100px */
 
-.intro {
-  background-image: url(../img/intro-bg.pngg);
-  height: 1192px;
-  padding-top: 656px;
-}
-.intro__team {
-  max-width: 600;
-  margin-left: 150px;
-  margin-right: 280px;
-  background: url(../img/intro-bg.png) no-repeat center;
-  
-}
+
+

@@ -115,6 +115,29 @@ body {
   margin: 0 auto;
 }
 /* 620px 100px */
+.wrapper__intro {
+  max-width: 1720px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
 
+}
+.intro__cpt {
+  max-width: 365px;
+  color: #282828;
+  grid-column: span 1;
+}
+.intro__title {
+  font-size: 70px;
+}
+.intro__desc {
+  grid-column: span 3;
+  justify-self: center;
+}
+.desc__title {
+  font-size: 32px;
+  line-height: 59px;
+}
 
 

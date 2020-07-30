@@ -1,74 +1,122 @@
 /* din pro bold */
+
 @font-face {
-    font-family: 'FF DIN';
-    src: local('FF DIN Pro Bold'), local('FF-DIN-Pro-Bold'),
-        url('../fonts/DINPro-Bold.woff2') format('woff2'),
-        url('../fonts/DINPro-Bold.woff') format('woff'),
-        url('../fonts/DINPro-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
+  font-family: 'FF DIN';
+  src: local('FF DIN Pro Bold'), local('FF-DIN-Pro-Bold'), url('../fonts/DINPro-Bold.woff2') format('woff2'), url('../fonts/DINPro-Bold.woff') format('woff'), url('../fonts/DINPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 
 /* DIN PRO MEDIUM */
+
 @font-face {
-    font-family: 'DIN Pro';
-    src: local('DIN Pro Medium'), local('DIN-Pro-Medium'),
-        url('../fonts/DINPro-Medium.woff2') format('woff2'),
-        url('../fonts/DINPro-Medium.woff') format('woff'),
-        url('../fonts/DINPro-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-  }
+  font-family: 'DIN Pro';
+  src: local('DIN Pro Medium'), local('DIN-Pro-Medium'), url('../fonts/DINPro-Medium.woff2') format('woff2'), url('../fonts/DINPro-Medium.woff') format('woff'), url('../fonts/DINPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* Regular */
-  @font-face {
-    font-family: 'FF DIN';
-    src: local('FF DIN Pro Regular'), local('FF-DIN-Pro-Regular'),
-        url('../fonts/DINPro.woff2') format('woff2'),
-        url('../DINPro.woff') format('woff'),
-        url('DINPro.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
- /*  PFDinTextPro-Medium */
- 
- @font-face {
+
+@font-face {
+  font-family: 'FF DIN';
+  src: local('FF DIN Pro Regular'), local('FF-DIN-Pro-Regular'), url('../fonts/DINPro.woff2') format('woff2'), url('../DINPro.woff') format('woff'), url('DINPro.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*  PFDinTextPro-Medium */
+
+@font-face {
   font-family: 'PFDinTextPro-Medium';
   font-style: normal;
   font-weight: normal;
-  src: local('PFDinTextPro-Medium'), url('PFDinTextPro-Medium.woff') format('woff');
-  }
+  src: local('PFDinTextPro-Medium'), url('../fonts/PFDinTextPro-Medium.woff') format('woff');
+}
 
-  html {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *::before, *::after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: normal;
-    color: #102746;
+  font-family: 'DINPro-Bold';
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
 }
+
 .header {
-    background: #f8f8f8;
+  background: #f8f8f8;
 }
+
 .header__wrapper {
-    max-width: 1025px;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 .header__title {
-    font-family: 'DINPro-Bold';
-    max-width: 625px;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 45px;
+  color: #282828;
+  max-width: 625px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 45px;
+  margin-bottom: 82px;
+}
+
+.header__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 82px;
+}
+
+.header__box {
+  background-color: #e7e7e7;
+  border-radius: 140px;
+  max-width: 540px;
+}
+
+.box__pic {
+  height: 265px;
+}
+
+.box__thumb {
+  display: block;
+  width: 100%;
+}
+
+.header__block:first-child .header__box {
+  padding-top: 61px;
+}
+
+.header__block:last-child .header__box {
+  padding-top: 28px;
+}
+
+.header__block:first-child .box__pic {
+  height: 232px;
+}
+
+.header__desc {
+  max-width: 350px;
+  font-family: 'PFDinTextPro-Medium';
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: rgba(40, 40, 40, 0.6);
+  margin: 0 auto;
+}
+
+.intro {
+  background: url(../img/people.png) no-repeat center, url(../img/rect.png) no-repeat center, url(../img/rect-2.png) no-repeat center transparent\7, url(../img/evangelist.png) no-repeat center, url(../img/intro-bg.png) no-repeat center;
+  background-size: contain, contain, contain, contain, cover;
+  height: 1192px;
 }

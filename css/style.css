@@ -116,7 +116,7 @@ body {
 }
 
 .intro {
-  background: url(../img/people.png) no-repeat center, url(../img/rect.png) no-repeat center, url(../img/rect-2.png) no-repeat center transparent\7, url(../img/evangelist.png) no-repeat center, url(../img/intro-bg.png) no-repeat center;
+  background: url(../img/people.png) no-repeat center, url(../img/rect.png) no-repeat center, url(../img/rect-2.png) no-repeat center, url(../img/evangelist.png) no-repeat center, url(../img/intro-bg.png) no-repeat center;
   background-size: contain, contain, contain, contain, cover;
   height: 1192px;
 }

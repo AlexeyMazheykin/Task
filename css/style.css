@@ -19,7 +19,7 @@
     font-weight: 500;
     font-style: normal;
   }
-
+/* Regular */
   @font-face {
     font-family: 'FF DIN';
     src: local('FF DIN Pro Regular'), local('FF-DIN-Pro-Regular'),
@@ -29,9 +29,16 @@
     font-weight: 400;
     font-style: normal;
   }
+ /*  PFDinTextPro-Medium */
+ 
+ @font-face {
+  font-family: 'PFDinTextPro-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PFDinTextPro-Medium'), url('PFDinTextPro-Medium.woff') format('woff');
+  }
 
-
-html {
+  html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }

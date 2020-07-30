@@ -116,7 +116,14 @@ body {
 }
 
 .intro {
-  background: url(../img/people.png) no-repeat center, url(../img/rect.png) no-repeat center, url(../img/rect-2.png) no-repeat center, url(../img/evangelist.png) no-repeat center, url(../img/intro-bg.png) no-repeat center;
-  background-size: contain, contain, contain, contain, cover;
+  background-image: url(../img/intro-bg.pngg);
   height: 1192px;
+  padding-top: 656px;
+}
+.intro__team {
+  max-width: 600;
+  margin-left: 150px;
+  margin-right: 280px;
+  background: url(../img/intro-bg.png) no-repeat center;
+  
 }

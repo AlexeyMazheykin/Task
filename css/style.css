@@ -45,7 +45,7 @@ html {
 }
 
 body {
-  font-family: 'DINPro-Bold';
+  font-family: 'FF DIN';
   font-style: normal;
   font-size: 16px;
   font-weight: 700;
@@ -73,7 +73,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 82px;
+  margin-bottom: 82px;
 }
 
 .header__box {
@@ -116,8 +116,10 @@ body {
 }
 /* 620px 100px */
 .intro {
-  background: url(../img/intro-bg.png) no-repeat center;
+  background: url(../img/intro-bg.png) no-repeat center/cover;
   padding-top: 130px;
+  position: relative;
+  padding-bottom: 100px;
 }
 .wrapper__intro {
   max-width: 1770px;
@@ -195,5 +197,45 @@ body {
 .google {
  float: left;
 }
+.methods {
+  background-color: #e7e7e7;
+  padding-top: 72px;
+  padding-left: 90px;
+  padding-bottom: 92px;
+}
+.methods__title {
+  font-size: 32px;
+  line-height: 0.7;
+  margin-bottom: 62px;
+}
+.methods__lists {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.methods__list {
+  max-width: 320px;
+  font-size: 31px;
+  font-family: 'DIN Pro';
+  font-weight: 500;
+  color: rgba(40, 40, 40, 0.6);
+  margin-right: 100px;
+}
+.methods__list:last-child {
+  margin: 0;
+
+}
+.mehod__list-item {
+  background: url(../img/list_style.png) no-repeat center left;
+  padding-left: 30px;
+  margin-bottom: 50px;
+}
+.mehod__list-item:last-child {
+  margin: 0;
+}
+.methods__lists ul:first-child li:nth-child(2) {
+  background-position: top 10px;
+}
+
 
 

@@ -58,28 +58,30 @@ body {
 .header__wrapper {
   max-width: 1240px;
   margin: 0 auto;
+  padding-top: 60px;
 }
 
 .header__title {
   color: #282828;
-  max-width: 625px;
+ /*  max-width: 630px; */
   text-align: center;
-  margin: 0 auto;
   font-size: 45px;
-  margin-bottom: 82px;
+  margin-bottom: 69px;
+  line-height: 55px;
 }
 
 .header__blocks {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 82px;
+  margin-bottom: 75px;
 }
 
 .header__box {
   background-color: #e7e7e7;
   border-radius: 140px;
   max-width: 540px;
+  margin-bottom: 20px;
 }
 
 .box__pic {
@@ -118,12 +120,14 @@ body {
 .intro {
   background: url(../img/intro-bg.png) no-repeat center/cover;
   padding-top: 130px;
-  position: relative;
   padding-bottom: 100px;
 }
 .wrapper__intro {
-  max-width: 1770px;
+  background: url(../img/evangelist.png) no-repeat 483px;
+  max-width: 1824px;
   margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
  
  
 }
@@ -131,6 +135,7 @@ body {
   margin-bottom: 110px;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 .intro__title {
   max-width: 365px;
@@ -198,10 +203,12 @@ body {
  float: left;
 }
 .methods {
-  background-color: #e7e7e7;
-  padding-top: 72px;
+  background: linear-gradient(to right, #f8f8f8, #f8f8f8 68%, transparent);
+  padding-top: 70px;
   padding-left: 90px;
-  padding-bottom: 92px;
+  padding-bottom: 88px;
+  max-width: 1420px
+  
 }
 .methods__title {
   font-size: 32px;
@@ -228,7 +235,7 @@ body {
 .mehod__list-item {
   background: url(../img/list_style.png) no-repeat center left;
   padding-left: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 39px;
 }
 .mehod__list-item:last-child {
   margin: 0;
@@ -236,6 +243,15 @@ body {
 .methods__lists ul:first-child li:nth-child(2) {
   background-position: top 10px;
 }
-
+.people__pic {
+  z-index: 1;
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  max-width: 915px;
+}
+.people__thumb {
+  width: 100%;
+}
 
 

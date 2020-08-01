@@ -19,7 +19,7 @@
 /* Regular */
 
 @font-face {
-  font-family: 'FF DIN';
+  font-family: 'FF DIN reg';
   src: local('FF DIN Pro Regular'), local('FF-DIN-Pro-Regular'), url('../fonts/DINPro.woff2') format('woff2'), url('../DINPro.woff') format('woff'), url('DINPro.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
@@ -35,12 +35,10 @@
 }
 
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *::before, *::after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -53,18 +51,20 @@ body {
 
 .header {
   background: #f8f8f8;
+  padding-bottom: 74px;
+  padding-top: 82px;
 }
 
 .header__wrapper {
   max-width: 1240px;
   margin: 0 auto;
-  padding-top: 60px;
 }
 
 .header__title {
+  max-width: 629px;
   color: #282828;
- /*  max-width: 630px; */
   text-align: center;
+  margin: 0 auto;
   font-size: 45px;
   margin-bottom: 69px;
   line-height: 55px;
@@ -74,35 +74,25 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 75px;
 }
 
 .header__box {
-  background-color: #e7e7e7;
-  border-radius: 140px;
-  max-width: 540px;
-  margin-bottom: 20px;
+  width: 557px;
+  height: 293px;
+  background-color: rgba(40, 40, 40, 0.6);
+  border-radius: calc(293px/2);
 }
 
-.box__pic {
-  height: 265px;
+.box__video {
+  background-image: url(../img/video_lesson.png);
+  background-repeat: no-repeat;
+  background-position: center 62px;
 }
 
-.box__thumb {
-  display: block;
-  width: 100%;
-}
-
-.header__block:first-child .header__box {
-  padding-top: 61px;
-}
-
-.header__block:last-child .header__box {
-  padding-top: 28px;
-}
-
-.header__block:first-child .box__pic {
-  height: 232px;
+.box__diary {
+  background-image: url(../img/diary.png);
+  background-repeat: no-repeat;
+  background-position: center 62px;
 }
 
 .header__desc {
@@ -116,142 +106,33 @@ body {
   color: rgba(40, 40, 40, 0.6);
   margin: 0 auto;
 }
-/* 620px 100px */
-.intro {
+.team {
   background: url(../img/intro-bg.png) no-repeat center/cover;
-  padding-top: 130px;
-  padding-bottom: 100px;
+  padding-top: 140px;
 }
-.wrapper__intro {
-  background: url(../img/evangelist.png) no-repeat 483px;
-  max-width: 1824px;
-  margin: 0 auto;
+.team__wrapper {
+  max-width: 1770px;
   padding: 0 15px;
-  position: relative;
- 
- 
+  margin: 0 auto;
 }
-.develop {
-  margin-bottom: 110px;
+.developers {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
+  justify-content: space-between;
 }
-.intro__title {
-  max-width: 365px;
+.developers__title {
   color: #282828;
-  margin-right: 574px;
- 
-}
-.intro__title {
   font-size: 70px;
+  flex-basis: 370px;
 }
-
-.desc__title {
-  font-size: 32px;
-  line-height: 59px;
-  margin-bottom: 28px;
-}
-.desc__items {
+.developers__leader {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: 1250px;
+  justify-content: space-between;
 }
-.desc__item1 {
-  color: rgba(40, 40, 40, 0.6);
-  font-family: 'PFDinTextPro-Medium';
-  font-weight: normal;
-  font-size: 31px;
-  letter-spacing: 0.15px;
-  margin-right: 154px;
-}
-.desc__list-title {
-  line-height: 41px;
-  margin-bottom: 21px;
-}
-.desc__list-item {
- margin-bottom: 15px;
- background: url(../img/list_style.png) no-repeat center left;
- padding-left: 30px;
-}
-.desc__list-item:last-child {
-  margin: 0;
-}
-.desc__item2 {
-  color: rgba(40, 40, 40, 0.6);
-  font-family: 'PFDinTextPro-Medium';
-  font-weight: normal;
-  font-size: 31px;
-  line-height: 41px;
-  letter-spacing: 0.15px;
-}
-.desc__item2 p:first-child {
-  margin-bottom: 15px;
-}
-
-.desk__item__thumb {
-  margin-bottom: 50px;
-}
-.servises a {
-  text-decoration: none;
-}
-.yandex {
-  margin-right: 40px;
-  margin-top: 10px;
-  float: left;
-}
-.google {
- float: left;
-}
-.methods {
-  background: linear-gradient(to right, #f8f8f8, #f8f8f8 68%, transparent);
-  padding-top: 70px;
-  padding-left: 90px;
-  padding-bottom: 88px;
-  max-width: 1420px
-  
-}
-.methods__title {
-  font-size: 32px;
-  line-height: 0.7;
-  margin-bottom: 62px;
-}
-.methods__lists {
-  display: flex;
-  flex-wrap: wrap;
-
-}
-.methods__list {
-  max-width: 320px;
-  font-size: 31px;
-  font-family: 'DIN Pro';
-  font-weight: 500;
-  color: rgba(40, 40, 40, 0.6);
-  margin-right: 100px;
-}
-.methods__list:last-child {
-  margin: 0;
-
-}
-.mehod__list-item {
-  background: url(../img/list_style.png) no-repeat center left;
-  padding-left: 30px;
-  margin-bottom: 39px;
-}
-.mehod__list-item:last-child {
-  margin: 0;
-}
-.methods__lists ul:first-child li:nth-child(2) {
-  background-position: top 10px;
-}
-.people__pic {
-  z-index: 1;
-  position: absolute;
-  bottom: -100px;
-  right: 0;
-  max-width: 915px;
-}
-.people__thumb {
-  width: 100%;
+.leader__case {
+  flex-basis: 778px;
 }
 
 

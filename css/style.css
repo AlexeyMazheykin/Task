@@ -138,7 +138,7 @@ body {
 .developers__leader::before {
   content: url(../img/evangelist.png);
   display: block;
-  width: 100%;
+  width: 526px;
   position: absolute;
   top: 0;
   left: -600px;
@@ -179,7 +179,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 9px;
   height: 100%;
   background: url(../img/list_style.png) no-repeat left center;
 }
@@ -240,7 +240,7 @@ max-width: 1605px;
 .method__list-item::before {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 9px;
   height: 100%;
   top: 0;
   left: 0;

@@ -295,7 +295,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+  transform: translateX(100%);
+  transition: .2s linear all;
+}
+.modal__active {
+  transform: translateX(0);
 }
 
 .modal__block {
@@ -435,7 +439,8 @@ body {
     height: auto;
   }
   .header__box {
-    max-width: 100%;
+    max-width: none;
+    width: 100%;
     max-height: auto;
     text-align: center;
   }

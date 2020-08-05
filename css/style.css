@@ -78,23 +78,16 @@ body {
 }
 
 .header__box {
-  width: 557px;
-  height: 293px;
-  background-color: rgba(40, 40, 40, 0.6);
+  max-width: 557px;
+  max-height: 293px;
+  background-color: #e6e6e6;
   border-radius: calc(293px/2);
 }
-
-.box__video {
-  background-image: url(../img/video_lesson.png);
-  background-repeat: no-repeat;
-  background-position: center 62px;
+.box__thumb {
+  max-width: 100%;
 }
 
-.box__diary {
-  background-image: url(../img/diary.png);
-  background-repeat: no-repeat;
-  background-position: center 62px;
-}
+
 
 .header__desc {
   max-width: 350px;
@@ -110,6 +103,7 @@ body {
 .team {
   background: url(../img/intro-bg.png) no-repeat center/cover;
   padding-top: 140px;
+  padding-bottom: 100px;
 }
 .team__wrapper {
   max-width: 1770px;
@@ -120,7 +114,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
 }
 .developers__title {
   color: #282828;
@@ -128,20 +122,17 @@ body {
   flex-basis: 370px;
 }
 .developers__leader {
-  display: flex;
-  flex-wrap: wrap;
   flex-basis: 778px;
-  justify-content: space-between;
   position: relative;
- 
 }
 .developers__leader::before {
-  content: url(../img/evangelist.png);
-  display: block;
-  width: 100%;
+  content: '';
+  background: url(../img/evangelist.png);
+  width: 526px;
+  height: 722px;
   position: absolute;
-  top: 0;
-  left: -600px;
+  top: -30px;
+  left: -468px;
   z-index: 1;
 }
 .leader__case {
@@ -149,7 +140,7 @@ body {
 }
 .leader__case-title {
   font-size: 32px;
-  margin-bottom: 65px;
+  margin-bottom: 50px;
 }
 .leader__case-subtitle {
   font-family: 'DIN Pro';
@@ -161,12 +152,12 @@ body {
   justify-content: space-between;
 }
 .events-list-item {
-  margin-bottom: 24px;
+  margin-bottom: 10px;
   position: relative;
   padding-left: 20px;
 }
 .events-list-item:first-child {
-  margin-bottom: 40px;
+  margin-bottom: 22px;
   padding: 0;
   max-width: 294px;
 }
@@ -205,12 +196,13 @@ body {
 }
 .methods {
 position: relative;
-background: linear-gradient(to right, #f8f8f8 50%, transparent);
+background: linear-gradient(to right, #f8f8f8 75%, transparent);
 z-index: 2;
-padding-top: 70px;
-padding-left: 86px;
+padding-top: 50px;
+padding-left: 76px;
 padding-bottom: 86px;
-max-width: 1605px;
+max-width: 1531px;
+margin-right: 400px;
 }
 .methods__title {
   font-size: 32px;
@@ -223,10 +215,10 @@ max-width: 1605px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 720px;
+  max-width: 670px;
 }
 .methods__list {
-  flex-basis: 340px;
+  flex-basis: 310px;
 }
 .method__list-item {
   line-height: 42px;
@@ -249,5 +241,126 @@ max-width: 1605px;
 .methods__list:first-child li:nth-child(2)::before {
   background-position: left 20px;
 }
+.wrapp__full {
+  margin: 0 auto;
+  max-width: 2020px;
+  position: relative;
+}
+.team__pct {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  z-index: 5;
+}
+@media screen and (max-width: 1600px) {
+  .header__blocks {
+    justify-content: space-around;
+  }
+  .team {
+    padding-top: 50px;
+  }
+  .developers__title {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  .developers {
+    display: block;
+  }
+
+  .developers__leader::before {
+    display: none;
+  }
+  .leader__case {
+    display: block;
+  }
+  .leader__case-title {
+    margin-bottom: 25px;
+  }
+  .case__company {
+    position: relative;
+  }
+  .case__company::before {
+      content: '';
+      background: url(../img/evangelist.png);
+      width: 526px;
+      height: 722px;
+      position: absolute;
+      top: 0;
+      left: -390px;
+      z-index: 1;
+    }
+
+    .team__pct {
+      display: none;
+    }
+    .methods {
+      background-color: #f8f8f8;
+      max-width: 100%;
+      margin: 0;
+      background: #f8f8f8 url(../img/people.png) bottom right/34% no-repeat;
+     padding-left: 30px;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    .header {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .header__block:first-child {
+      margin-bottom: 30px;
+    }
+    .header__title {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 30px;
+    }
+    .header__blocks {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .header__box {
+      max-width: 100%;
+      max-height: auto;
+      text-align: center;
+    }
+    .developers__title {
+      font-size: 30px;
+    }
+    .leader__case-title {
+      font-size: 20px;
+    }
+    .leader__case-subtitle {
+      font-size: 18px;
+    }
+    .case__company::before {
+      width: 300px;
+      height: 500px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      left: -292px;
+    }
+    .k__50-link {
+      margin-bottom: 20px;
+    }
+    .methods {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background: #f8f8f8 url(../img/people.png) bottom right/48% no-repeat;
+    }
+    .methods__title {
+      font-size: 20px;
+    }
+    .methods__lists {
+      font-size: 18px;
+      display: block;
+      max-width: 100%;
+    }
+    .method__list-item {
+      margin-bottom: 18px;
+      line-height: 20px;
+    }
+  }
 
 

@@ -126,16 +126,10 @@ body {
   position: relative;
 }
 .developers__leader::before {
-<<<<<<< HEAD
   content: '';
   background: url(../img/evangelist.png);
   width: 526px;
   height: 722px;
-=======
-  content: url(../img/evangelist.png);
-  display: block;
-  width: 526px;
->>>>>>> f3ef5395bb47d0cdd203a1a74c8da7216e4ffb91
   position: absolute;
   top: -30px;
   left: -468px;
@@ -176,7 +170,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 9px;
+  width: 100%;
   height: 100%;
   background: url(../img/list_style.png) no-repeat left center;
 }
@@ -238,7 +232,7 @@ margin-right: 400px;
 .method__list-item::before {
   content: '';
   position: absolute;
-  width: 9px;
+  width: 100%;
   height: 100%;
   top: 0;
   left: 0;
@@ -247,7 +241,6 @@ margin-right: 400px;
 .methods__list:first-child li:nth-child(2)::before {
   background-position: left 20px;
 }
-<<<<<<< HEAD
 .wrapp__full {
   margin: 0 auto;
   max-width: 2020px;
@@ -371,5 +364,3 @@ margin-right: 400px;
   }
 
 
-=======
->>>>>>> f3ef5395bb47d0cdd203a1a74c8da7216e4ffb91

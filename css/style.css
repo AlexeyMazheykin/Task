@@ -313,6 +313,7 @@ body {
   padding-top: 5.5vw;
   padding-right: 6vw;
   padding-bottom: 5.5vw;
+  z-index: 2;
 }
 
 .block__content {
@@ -370,7 +371,14 @@ body {
   background: url(../img/discard__button.png) no-repeat right center;
   background-size: cover;
 }
-
+.modal__hide-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
 
 @media screen and (max-width: 1600px) {
   .header__blocks {
